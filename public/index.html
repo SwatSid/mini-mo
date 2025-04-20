@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Whiteboard MMO</title>
+  <style>
+    html,body { margin:0; height:100%; overflow:hidden; background:#fff; }
+    #ui { position:absolute; top:10px; left:10px; z-index:2 }
+  </style>
+</head>
+<body>
+  <!-- tiny join UI -->
+  <div id="ui">
+    <input id="name"  placeholder="name">
+    <select id="shape">
+      <option value="circle">circle</option>
+      <option value="square">square</option>
+      <option value="triangle">triangle</option>
+    </select>
+    <button id="go">Spawn</button>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
